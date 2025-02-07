@@ -13,6 +13,7 @@ The Appointment Booking Application is a .NET 8 application that allows users to
 ### 1. Clone the Repository
 
 git clone https://github.com/your-repository/appointment-booking.git 
+
 cd appointment-booking
 
 ### 2. Configure the Database
@@ -22,6 +23,7 @@ Update the `appsettings.json` file with your database connection string:
 
 ### 3. Build the Project
 Build the project to restore the dependencies and compile the code:
+
 dotnet build
 
 ## Running the Application
@@ -35,6 +37,7 @@ The application will start and be accessible at `http://localhost:3000` and `htt
 
 ### 2. Running the Unit Tests
 To run the tests, use the following command:
+
 dotnet test
 
 This will execute all the unit tests and display the results in the terminal or command prompt.
