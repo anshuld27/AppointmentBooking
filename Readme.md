@@ -11,17 +11,29 @@ The Appointment Booking Application is a .NET 8 application that allows users to
 ## Setup Instructions
 
 ### 1. Clone the Repository
+git clone https://github.com/your-repository/appointment-booking.git cd appointment-booking
 
 ### 2. Configure the Database
 Update the `appsettings.json` file with your database connection string:
+{ "ConnectionStrings": { "DefaultConnection": "YourDatabaseConnectionString" } }
 
+### 3. Build the Project
+Build the project to restore the dependencies and compile the code:
+dotnet build
 
 ## Running the Application
 
 ### 1. Run the Application
 To run the application, use the following command:
-The application will start and be accessible at `http://localhost:3000` and `https://localhost:3001` .
+dotnet run --project AppointmentBooking/AppointmentBooking.csproj
 
+The application will start and be accessible at `http://localhost:3000` and `https://localhost:3001`.
+
+### 2. Running the Unit Tests
+To run the tests, use the following command:
+dotnet test
+
+This will execute all the unit tests and display the results in the terminal or command prompt.
 
 ## Project Structure
 - **AppointmentBooking**: The main application project.
@@ -32,11 +44,12 @@ The application will start and be accessible at `http://localhost:3000` and `htt
 - **AppointmentBooking/Models**: Contains the entity models representing the database tables.
 - **AppointmentBooking/Data**: Contains the database context and migration files.
 - **AppointmentBooking/Middleware**: Contains the middleware components for the application.
-- AppointmentBooking : The main application project.
-
 
 ## Additional Information
 - **Logging**: The application uses `ILogger` for logging errors and information.
 - **Entity Framework Core**: The application uses Entity Framework Core for database operations.
 - **In-Memory Database**: The test project uses an in-memory database for isolated testing.
+
+## Contributing
+If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
 
